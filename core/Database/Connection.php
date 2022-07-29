@@ -14,9 +14,12 @@
                echo  'erreur :'.$e->getMessage();
   
             }
-  
-      
     }
+    public static function disconnect()
+    {
+        self::$connection = null;
+    }
+
   
 
  }
